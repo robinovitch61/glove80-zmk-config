@@ -228,12 +228,14 @@
             bindings = <&mo 1>;
             key-positions = <69 74>;
             timeout-ms = <70>;
+            slow-release;
         };
 
         switch_apps {
             bindings = <&switchapps>;
             key-positions = <60 61>;
             timeout-ms = <70>;
+            slow-release;
         };
     };
 
