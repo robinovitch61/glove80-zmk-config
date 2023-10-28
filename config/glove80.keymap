@@ -212,6 +212,7 @@
                 <&kp L &kp E &kp O &kp R &kp O &kp B &kp I &kp N &kp O &kp V &kp I &kp T &kp C &kp H &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
 
             label = "EMAIL";
+            tap-ms = <5>;
         };
     };
 };
