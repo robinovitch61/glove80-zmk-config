@@ -212,6 +212,15 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        tolower {
+            bindings = <&to 1>;
+            key-positions = <48 47>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -249,4 +258,3 @@
         };
     };
 };
-
