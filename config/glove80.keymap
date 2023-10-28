@@ -203,6 +203,14 @@
                 <&macro_release>,
                 <&kp LCMD>;
         };
+        switchapps: switchapps {
+            compatible = "zmk,behavior-macro";
+            label = "SWITCHAPPS";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&macro_press>, <&kp LCMD>, <&macro_tap>, <&kp TAB>;
+        };
     };
 };
 
@@ -218,7 +226,13 @@
         thumbs_lower {
             bindings = <&mo 1>;
             key-positions = <69 74>;
-            timeout-ms = <100>;
+            timeout-ms = <70>;
+        };
+
+        switch_apps {
+            bindings = <&switchapps>;
+            key-positions = <60 61>;
+            timeout-ms = <70>;
         };
     };
 
