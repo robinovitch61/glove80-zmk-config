@@ -215,9 +215,14 @@
     combos {
         compatible = "zmk,combos";
 
-        tolower {
-            bindings = <&to 1>;
-            key-positions = <48 47>;
+        left_lower {
+            bindings = <&mo 1>;
+            key-positions = <37 36>;
+        };
+
+        right_lower {
+            bindings = <&mo 1>;
+            key-positions = <42 43>;
         };
     };
 
