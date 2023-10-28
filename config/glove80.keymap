@@ -207,12 +207,10 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp L &kp E &kp O &kp R &kp O &kp B &kp I &kp N &kp O &kp V &kp I &kp T &kp C &kp H &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
-
+            bindings = <&kp L &kp E &kp O &kp R &kp O &kp B &kp I &kp N &kp O &kp V &kp I &kp T &kp C &kp H &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
             label = "EMAIL";
-            tap-ms = <5>;
+            tap-ms = <30>;
+            wait-ms = <30>;
         };
     };
 };
