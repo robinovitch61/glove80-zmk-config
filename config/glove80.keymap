@@ -237,6 +237,13 @@
             timeout-ms = <70>;
             slow-release;
         };
+
+        switch_apps_thumbs {
+            bindings = <&switchapps>;
+            key-positions = <70 73>;
+            timeout-ms = <70>;
+            slow-release;
+        };
     };
 
     keymap {
@@ -255,12 +262,12 @@
 
         layer_Lower {
             bindings = <
-&none                 &none         &none           &none         &none                                                                              &trans            &trans             &trans          &trans           &trans
+&trans                &trans        &trans          &trans        &trans                                                                             &trans            &trans             &trans          &trans           &trans
 &kp F1                &kp F2        &kp F3          &kp F4        &kp F5       &none                                                      &none      &kp F6            &kp F7             &kp F8          &kp F9           &kp F10
 &kp EQUAL             &kp EXCL      &kp AT          &kp HASH      &kp DLLR     &kp PRCNT                                                  &kp CARET  &kp AMPS          &kp STAR           &kp LPAR        &kp RPAR         &kp MINUS
 &trans                &kp N1        &kp N2          &kp N3        &kp N4       &kp N5                                                     &kp N6     &kp N7            &kp N8             &kp N9          &kp N0           &trans
-&none                 &kp KP_EQUAL  &kp UNDERSCORE  &kp KP_MINUS  &kp KP_PLUS  &none      &trans  &trans  &trans  &trans  &trans  &trans  &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none
-&magic LAYER_Magic 0  &none         &none           &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans             &trans            &trans             &trans          &trans           &none
+&trans                &kp KP_EQUAL  &kp UNDERSCORE  &kp KP_MINUS  &kp KP_PLUS  &none      &trans  &trans  &trans  &trans  &trans  &trans  &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&magic LAYER_Magic 0  &trans        &trans          &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans             &trans            &trans             &trans          &trans           &trans
             >;
         };
 
