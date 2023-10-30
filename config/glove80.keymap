@@ -237,13 +237,6 @@
             timeout-ms = <70>;
             slow-release;
         };
-
-        switch_apps_thumbs {
-            bindings = <&switchapps>;
-            key-positions = <70 73>;
-            timeout-ms = <70>;
-            slow-release;
-        };
     };
 
     keymap {
