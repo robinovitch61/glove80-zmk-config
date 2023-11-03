@@ -226,7 +226,7 @@
 
         thumbs_lower {
             bindings = <&mo 1>;
-            key-positions = <69 74>;
+            key-positions = <74>;
             timeout-ms = <70>;
             slow-release;
         };
