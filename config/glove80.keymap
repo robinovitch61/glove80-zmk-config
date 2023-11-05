@@ -246,12 +246,12 @@
 
         layer_Base {
             bindings = <
-&none                 &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT                                                                                     &kp C_PLAY_PAUSE  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none
-&kp EQUAL             &kp N1        &kp N2        &kp N3      &kp N4      &kp N5                                                                     &kp N6  &kp N7            &kp N8      &kp N9             &kp N0             &kp MINUS
-&kp TAB               AS(Q)         AS(W)         AS(E)       AS(R)       AS(T)                                                                      AS(Y)   AS(U)             AS(I)       AS(O)              AS(P)              &kp BSLH
-&mt LCTRL ESC         AS(A)         AS(S)         AS(D)       AS(F)       AS(G)                                                                      AS(H)   AS(J)             AS(K)       AS(L)              &as LS(SEMI) SEMI  &kp SQT
-&kp LSHFT             AS(Z)         AS(X)         AS(C)       AS(V)       AS(B)   &kp DEL   &kp LALT  &email     &caps_word  &kp RCTRL  &kp RCMD     AS(N)   AS(M)             &kp COMMA   &kp DOT            &kp FSLH           &kp RSHFT
-&magic LAYER_Magic 0  &kp GRAVE     &iterm        &kp LEFT    &kp RIGHT           &kp BSPC  &kp LGUI  &kp LCTRL  &kp RALT    &kp RET    &lt 1 SPACE          &kp DOWN          &kp UP      &kp LBKT           &kp RBKT           &caps_word
+&none                 &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT                                                                                     &kp C_PLAY_PAUSE  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none
+&kp EQUAL             &kp N1        &kp N2        &kp N3      &kp N4      &kp N5                                                                     &kp N6  &kp N7            &kp N8      &kp N9             &kp N0           &kp MINUS
+&kp TAB               AS(Q)         AS(W)         AS(E)       AS(R)       AS(T)                                                                      AS(Y)   AS(U)             AS(I)       AS(O)              AS(P)            &kp BSLH
+&mt LCTRL ESC         AS(A)         AS(S)         AS(D)       AS(F)       AS(G)                                                                      AS(H)   AS(J)             AS(K)       AS(L)              AS(SEMI)         &kp SQT
+&kp LSHFT             AS(Z)         AS(X)         AS(C)       AS(V)       AS(B)   &kp DEL   &kp LALT  &email     &caps_word  &kp RCTRL  &kp RCMD     AS(N)   AS(M)             &kp COMMA   &kp DOT            &kp FSLH         &kp RSHFT
+&magic LAYER_Magic 0  &kp GRAVE     &iterm        &kp LEFT    &kp RIGHT           &kp BSPC  &kp LGUI  &kp LCTRL  &kp RALT    &kp RET    &lt 1 SPACE          &kp DOWN          &kp UP      &kp LBKT           &kp RBKT         &caps_word
             >;
         };
 
