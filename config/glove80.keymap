@@ -235,13 +235,8 @@
             slow-release;
         };
 
-        shift_left {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <50 49>;
-        };
-
-        shift_right {
-            bindings = <&kp RIGHT_SHIFT>;
+        ctrl {
+            bindings = <&kp LCTRL>;
             key-positions = <59 60>;
         };
     };
