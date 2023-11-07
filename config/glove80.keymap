@@ -23,7 +23,6 @@
 #define LAYER_Lower 1
 #define LAYER_Magic 2
 
-
 / {
     /* Glove80 system behavior & macros */
 
@@ -37,14 +36,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LAYER_Lower>, <&to LAYER_Lower>;
-        };
-        ltb: layer_tap_balanced {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_BALANCED";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&kp>;
         };
     };
 };
@@ -224,6 +215,14 @@
 
 / {
     behaviors {
+        ltb: layer_tap_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_BALANCED";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     combos {
@@ -234,6 +233,16 @@
             key-positions = <60 61>;
             timeout-ms = <70>;
             slow-release;
+        };
+
+        shift_left {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <50 49>;
+        };
+
+        shift_right {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <59 60>;
         };
     };
 
@@ -247,7 +256,7 @@
 &kp TAB               &kp Q         &kp W         &kp E       &kp R       &kp T                                                                       &kp Y   &kp U             &kp I       &kp O              &kp P            &kp BSLH
 &mt LCTRL ESC         &kp A         &kp S         &kp D       &kp F       &kp G                                                                       &kp H   &kp J             &kp K       &kp L              &kp SEMI         &kp SQT
 &kp LSHFT             &kp Z         &kp X         &kp C       &kp V       &kp B   &kp DEL   &kp LALT  &email     &caps_word  &kp RCTRL  &kp RCMD      &kp N   &kp M             &kp COMMA   &kp DOT            &kp FSLH         &kp RSHFT
-&magic LAYER_Magic 0  &kp GRAVE     &iterm        &kp LEFT    &kp RIGHT           &kp BSPC  &kp LGUI  &kp LCTRL  &kp RALT    &kp RET    &ltb 1 SPACE           &kp DOWN          &kp UP      &kp LBKT           &kp RBKT         &caps_word
+&magic LAYER_Magic 0  &kp GRAVE     &iterm        &kp LEFT    &kp RIGHT           &kp BSPC  &kp LGUI  &kp LCTRL  &kp RALT    &kp RET    &ltb 1 SPACE          &kp DOWN          &kp UP      &kp LBKT           &kp RBKT         &caps_word
             >;
         };
 
@@ -268,7 +277,7 @@
 &none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
-&sys_reset       &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
