@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -21,34 +20,31 @@
 
     macros {
         /* Glove80 system */
+
         rgb_ug_status_macro: rgb_ug_status_macro {
             label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_STATUS>;
         };
-
         bt_0: bt_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 0>;
         };
-
         bt_1: bt_1 {
             label = "BT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 1>;
         };
-
         bt_2: bt_2 {
             label = "BT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 2>;
         };
-
         bt_3: bt_3 {
             label = "BT_3";
             compatible = "zmk,behavior-macro";
@@ -57,6 +53,7 @@
         };
 
         /* My custom macros */
+
         iterm: iterm {
             label = "iterm";
             compatible = "zmk,behavior-macro";
@@ -71,7 +68,6 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
-
         switchapps: switchapps {
             compatible = "zmk,behavior-macro";
             label = "SWITCHAPPS";
@@ -87,7 +83,6 @@
                 <&macro_release>,
                 <&kp LCMD>;
         };
-
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -106,7 +101,6 @@
             tapping-term-ms = <200>;
             bindings = <&mo LAYER_Lower>, <&to LAYER_Lower>;
         };
-
         ltb: layer_tap_balanced {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BALANCED";
