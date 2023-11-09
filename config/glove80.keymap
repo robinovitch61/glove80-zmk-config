@@ -108,6 +108,8 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
+
+            retro-tap;
         };
     };
 
