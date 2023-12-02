@@ -27,24 +27,28 @@
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_STATUS>;
         };
+
         bt_0: bt_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 0>;
         };
+
         bt_1: bt_1 {
             label = "BT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 1>;
         };
+
         bt_2: bt_2 {
             label = "BT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 2>;
         };
+
         bt_3: bt_3 {
             label = "BT_3";
             compatible = "zmk,behavior-macro";
@@ -68,6 +72,7 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
         switchapps: switchapps {
             compatible = "zmk,behavior-macro";
             label = "SWITCHAPPS";
@@ -83,6 +88,7 @@
                 <&macro_release>,
                 <&kp LCMD>;
         };
+
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -101,6 +107,7 @@
             tapping-term-ms = <200>;
             bindings = <&mo LAYER_Lower>, <&to LAYER_Lower>;
         };
+
         ltb: layer_tap_balanced {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BALANCED";
@@ -147,7 +154,7 @@
             bindings = <
 &trans                &trans        &trans          &trans        &trans                                                                             &trans    &trans    &trans    &trans    &trans
 &kp F1                &kp F2        &kp F3          &kp F4        &kp F5       &none                                                      &none      &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
-&kp EQUAL             &kp EXCL      &kp AT          &kp HASH      &kp DLLR     &kp PRCNT                                                  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp MINUS
+&trans                &kp EXCL      &kp AT          &kp HASH      &kp DLLR     &kp PRCNT                                                  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp MINUS
 &trans                &kp N1        &kp N2          &kp N3        &kp N4       &kp N5                                                     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &trans
 &trans                &kp KP_EQUAL  &kp UNDERSCORE  &kp KP_MINUS  &kp KP_PLUS  &none      &trans  &trans  &trans  &trans  &trans  &trans  &none      &kp ESC   &trans    &trans    &trans    &trans
 &magic LAYER_Magic 0  &trans        &trans          &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans             &trans    &trans    &trans    &trans    &trans
