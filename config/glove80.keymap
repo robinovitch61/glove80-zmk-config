@@ -97,6 +97,15 @@
             tap-ms = <30>;
             wait-ms = <30>;
         };
+
+        eqgt: eqgt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_EQUAL &kp LS(GREATER_THAN)>;
+            label = "EQGT";
+            tap-ms = <30>;
+            wait-ms = <30>;
+        };
     };
 
     behaviors {
@@ -156,7 +165,7 @@
 &kp F1                &kp F2        &kp F3          &kp F4        &kp F5       &none                                                      &none      &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
 &trans                &kp EXCL      &kp AT          &kp HASH      &kp DLLR     &kp PRCNT                                                  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp MINUS
 &trans                &kp N1        &kp N2          &kp N3        &kp N4       &kp N5                                                     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &trans
-&trans                &kp KP_EQUAL  &kp UNDERSCORE  &kp KP_MINUS  &kp KP_PLUS  &none      &trans  &trans  &trans  &trans  &trans  &trans  &none      &kp ESC   &trans    &trans    &trans    &trans
+&trans                &kp KP_EQUAL  &kp UNDERSCORE  &kp KP_MINUS  &kp KP_PLUS  &none      &trans  &trans  &trans  &trans  &trans  &trans  &none      &eqgt     &trans    &trans    &trans    &trans
 &magic LAYER_Magic 0  &trans        &trans          &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans             &trans    &trans    &trans    &trans    &trans
             >;
         };
