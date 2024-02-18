@@ -132,16 +132,28 @@
     combos {
         compatible = "zmk,combos";
 
-        switch_apps {
+        switch_apps_rh {
             bindings = <&switchapps>;
             key-positions = <60 61>;
             timeout-ms = <70>;
             slow-release;
         };
 
-        ctrl {
+        ctrl_rh {
             bindings = <&kp LCTRL>;
             key-positions = <59 60>;
+        };
+
+        ctrl_lh {
+            bindings = <&kp LCTRL>;
+            key-positions = <49 50>;
+        };
+
+        switch_apps_lh {
+            bindings = <&switchapps>;
+            key-positions = <49 48>;
+            timeout-ms = <70>;
+            slow-release;
         };
     };
 
