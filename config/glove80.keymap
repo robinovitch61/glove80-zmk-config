@@ -165,7 +165,7 @@
 
         switch_apps_lh {
             bindings = <&switchapps>;
-            key-positions = <49 48>;
+            key-positions = <48 47>;
             timeout-ms = <70>;
             slow-release;
         };
